@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommendation</title>
+    <link rel="stylesheet" href="travel_recommendation.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                &#x2708 
+                <span>TravelBloom</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about-section">About Us</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+
+            <div class="search-box">
+                <input type="text" placeholder="Enter a destination or keyword" id="inputSearch"/>
+                <button class="btn search" id="btnSearch">Search</button>
+                <button class="btn clear" id="btnClear">Clear</button>
+            </div>
+        </nav>
+    </header>
+    <section class="hero" id="hero">
+        <div class="hero-content">
+          <h1>
+            EXPLORE <br>
+            DREAM <br>
+            DESTINATION
+          </h1>
+      
+          <p>
+            It encourages exploration of unfamiliar territories, embracing diverse
+            cultures and landscapes, while pursuing the desired destination.
+          </p>
+      
+          <button>BOOK NOW</button>
+        </div>
+    </section>
+    <section class="about-section" id="about-section">
+        <div class="about-overlay">
+      
+          <!-- Título -->
+          <h2 class="about-title">ABOUT US</h2>
+      
+          <!-- Texto largo -->
+          <div class="about-text">
+            <p>
+              Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent
+              services/products to our customers. Our mission is to provide the best experience for people
+              traveling to different destinations around the world.
+            </p>
+            <p>
+              Our values include integrity, innovation, customer satisfaction, and teamwork. We believe in
+              putting our customers first and working together to achieve our goals.
+            </p>
+            <p>
+              Feel free to explore our website to learn more about what we offer!
+            </p>
+          </div>
+      
+          <!-- Our Team -->
+          <div class="team-block">
+            <h3 class="team-title">Our<br/>Team</h3>
+      
+            <div class="team-grid">
+              <article class="team-card">
+                <div class="avatar">👤</div>
+                <div class="info">
+                  <h4>John Doe</h4>
+                  <p>John is responsible for…</p>
+                  <span class="role">CEO</span>
+                </div>
+              </article>
+      
+              <article class="team-card">
+                <div class="avatar">👤</div>
+                <div class="info">
+                  <h4>Celina Thomas</h4>
+                  <p>Celina Thomas is responsible for…</p>
+                  <span class="role">Team Lead</span>
+                </div>
+              </article>
+      
+              <article class="team-card">
+                <div class="avatar">👤</div>
+                <div class="info">
+                  <h4>Mike Tysen</h4>
+                  <p>Mike Tysen is responsible for…</p>
+                  <span class="role">Delivery Head</span>
+                </div>
+              </article>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+      <section id="contact-us">
+        <div class="contact-overlay">
+            <div class="contact-title">
+                <h2>CONTACT US</h2>
+                <p>Get in touch</p>
+            </div>
+
+            <form class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+                
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+                
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <button type="submit" onclick="alert('Thanks')">Submit</button>
+            </form>
+          
+
+        </div>
+
+      </section>
+
+  <aside class="results-panel" id="result">
+    <!-- aquí inyectas tus cards con JS -->
+  </aside>
+
+
+<script src="travel_recommendation.js"></script>
+</body>
+</html>
